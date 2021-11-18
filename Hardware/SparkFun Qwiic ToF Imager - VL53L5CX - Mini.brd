@@ -40,10 +40,10 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="1" fill="7" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="3" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="3" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="1" fill="7" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="9" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
@@ -199,25 +206,12 @@
 <dimension x1="0" y1="12.7" x2="25.4" y2="12.7" x3="12.7" y3="19.05" textsize="1.016" layer="47" width="0.0762" unit="inch"/>
 <dimension x1="0" y1="0" x2="0" y2="12.7" x3="-5.08" y3="6.35" textsize="1.016" layer="47" width="0.0762" unit="inch"/>
 <dimension x1="2.54" y1="2.54" x2="2.54" y2="0" x3="-1.27" y3="1.27" textsize="1.016" layer="47" width="0.0762" unit="inch"/>
+<text x="33.02" y="39.37" size="1.778" layer="51" ratio="15" align="top-left">2-Layer Board
+0.8mm Thickness
+1oz Copper
+</text>
 </plain>
 <libraries>
-<library name="SparkFun">
-<packages>
-<package name="STAND-OFF">
-<description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
-This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
-<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
-<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
-<hole x="0" y="0" drill="3.302"/>
-</package>
-<package name="MICRO-FIDUCIAL">
-<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
-</package>
-</packages>
-</library>
 <library name="SparkFun-Resistors">
 <description>&lt;h3&gt;SparkFun Resistors&lt;/h3&gt;
 This library contains resistors. Reference designator:R. 
@@ -339,30 +333,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package3d>
 </packages3d>
 </library>
-<library name="SparkX">
-<packages>
-<package name="1X04_NO_SILK">
-<description>&lt;h3&gt;Plated Through Hole - 4 Pin No Silk Outline&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
 This library contains electrically-functional connectors. 
@@ -427,6 +397,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.945" y1="3.154" x2="3.326" y2="3.154" width="0.1" layer="51"/>
 <wire x1="3.326" y1="3.154" x2="3.326" y2="3.535" width="0.1" layer="51"/>
 <wire x1="3.326" y1="3.535" x2="2.945" y2="3.535" width="0.1" layer="51"/>
+</package>
+<package name="1X04_NO_SILK">
+<description>&lt;h3&gt;Plated Through Hole - 4 Pin No Silk Outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -1568,6 +1558,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.7943" y="2.25851875"/>
 <vertex x="1.736565625" y="2.2904125"/>
 </polygon>
+</package>
+<package name="DUMMY">
+<description>&lt;h3&gt;Dummy Footprint&lt;/h3&gt;
+&lt;p&gt;NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.&lt;/p&gt;
+
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;BADGERHACK_LOGO&lt;/li&gt;
+&lt;li&gt;FRAME-LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+</package>
+<package name="ORDERING_INSTRUCTIONS">
+<description>&lt;h3&gt;Special Ordering Instructions Alert&lt;/h3&gt;
+&lt;p&gt;Indicates that the PCB material, colors, copper weights, and/or thickness are non-standard.&lt;/p&gt;
+&lt;p&gt;(Standard is 1.6mm FR4, 1 oz copper, immersion silver plating, red soldermask, white silkscreen.)&lt;/p&gt;
+&lt;p&gt;Use 0.7" Vector font @ 8% ratio</description>
+<text x="1.27" y="-1.27" size="3.048" layer="51" font="vector" ratio="15" align="top-left">Ordering Instructions:</text>
+<wire x1="0" y1="0" x2="101.6" y2="0" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="0" x2="101.6" y2="-8.89" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="-8.89" x2="101.6" y2="-50.8" width="0.2032" layer="51"/>
+<wire x1="101.6" y1="-50.8" x2="0" y2="-50.8" width="0.2032" layer="51"/>
+<wire x1="0" y1="-50.8" x2="0" y2="-8.89" width="0.2032" layer="51"/>
+<wire x1="0" y1="-8.89" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="0" y1="-8.89" x2="101.6" y2="-8.89" width="0.2032" layer="51"/>
+<text x="1.27" y="-6.35" size="1.778" layer="51" font="vector" align="top-left">(Add these comments when uploading gerbers.)</text>
+</package>
+<package name="FIDUCIAL-MICRO">
+<description>&lt;h3&gt;Fiducial - Circle, 0.25in&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
 </package>
 </packages>
 </library>
@@ -4436,6 +4456,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-Hardware">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+This library contains board components that are not electrical in nature, such as stand-offs, magnets, and Actobotics. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="STAND-OFF">
+<description>&lt;h3&gt;Standoff (#4 Screw)&lt;/h3&gt;
+&lt;p&gt;This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components.&lt;/p&gt;
+&lt;h4&gt;Devices Using&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;STAND-OFF&lt;/li&gt;&lt;/ul&gt;</description>
+<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
+<hole x="0" y="0" drill="3.302"/>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 <attribute name="REVISION" value="A"/>
@@ -4628,8 +4679,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </pass>
 </autorouter>
 <elements>
-<element name="JP2" library="SparkFun" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="24.638" y="10.414" smashed="yes"/>
-<element name="JP6" library="SparkFun" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="0.635" y="0.635" smashed="yes"/>
+<element name="JP2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="24.638" y="10.414" smashed="yes"/>
+<element name="JP6" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="0.635" y="0.635" smashed="yes"/>
 <element name="R4" library="SparkFun-Resistors" package="0402-TIGHT" value="2.2k" x="12.7" y="11.43" smashed="yes">
 <attribute name="NAME" x="12.7" y="12.192" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="RES-14341" x="12.7" y="11.43" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
@@ -4648,10 +4699,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="6.731" y="7.493" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-14483" x="4.572" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="Vertical Qwiic Connector" x="7.874" y="7.239" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
-</element>
-<element name="J3" library="SparkX" package="1X04_NO_SILK" value="PTH" x="6.35" y="1.27" smashed="yes">
-<attribute name="NAME" x="5.08" y="2.667" size="0.6096" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="5.08" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-14.63" y="-15.24" smashed="yes">
 <attribute name="DESIGNER" value="" x="-14.63" y="-15.24" size="1.778" layer="27" display="off"/>
@@ -4681,8 +4728,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="PROD_ID" value="RES-15011" x="15.24" y="6.35" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" value="47k" x="15.24" y="5.588" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="JP1" library="SparkFun" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="0.635" y="0.635" smashed="yes" rot="MR0"/>
-<element name="JP5" library="SparkFun" package="MICRO-FIDUCIAL" value="FIDUCIALUFIDUCIAL" x="24.765" y="12.065" smashed="yes" rot="MR0"/>
+<element name="JP1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="0.635" y="0.635" smashed="yes" rot="MR0"/>
+<element name="JP5" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="24.765" y="12.065" smashed="yes" rot="MR0"/>
 <element name="C1" library="SparkFun-Capacitors" package="0402-TIGHT" value="4.7uF" x="10.16" y="6.35" smashed="yes" rot="R180">
 <attribute name="NAME" x="10.16" y="5.588" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-14240" x="10.16" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
@@ -4730,8 +4777,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="U$3" library="output" package="#3V3#13" value="" x="8.89" y="3.937" smashed="yes" rot="MR270"/>
 <element name="U$4" library="output" package="PWR12" value="" x="6.223" y="8.89" smashed="yes" rot="R90"/>
 <element name="U$5" library="output" package="#LED#10" value="" x="8.001" y="3.81" smashed="yes" rot="R90"/>
-<element name="JP10" library="SparkFun" package="STAND-OFF" value="STAND-OFF" x="2.54" y="2.54" smashed="yes"/>
-<element name="JP11" library="SparkFun" package="STAND-OFF" value="STAND-OFF" x="22.86" y="2.54" smashed="yes"/>
+<element name="JP10" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="2.54" y="2.54" smashed="yes"/>
+<element name="JP11" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="22.86" y="2.54" smashed="yes"/>
 <element name="U$8" library="output" package="#INT_#0" value="" x="16.51" y="3.556" smashed="yes" rot="MR270"/>
 <element name="U$9" library="output" package="#RST_#1" value="" x="19.05" y="3.81" smashed="yes" rot="MR270"/>
 <element name="U$16" library="output" package="#I�C#0" value="" x="19.05" y="5.588" smashed="yes" rot="R90"/>
@@ -4744,11 +4791,17 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <element name="LOGO4" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_6MM" value="SFE_LOGO_NAME6_MM" x="12.7" y="9.652" smashed="yes"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_8MM" value="SFE_LOGO_NAME_FLAME8_MM" x="4.47" y="8.89" smashed="yes" rot="MR0"/>
 <element name="U$1" library="output" package="VL53L5CX_0" value="" x="12.827" y="8.001" smashed="yes"/>
+<element name="LOGO2" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="-13.97" y="-15.24" smashed="yes"/>
+<element name="J1" library="SparkFun-Connectors" package="1X04_NO_SILK" value="" x="6.35" y="1.27" smashed="yes">
+<attribute name="NAME" x="5.08" y="2.667" size="0.6096" layer="25" font="vector" ratio="20"/>
+<attribute name="PROD_ID" value="CONN-09696" x="6.35" y="1.27" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="VALUE" x="5.08" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20"/>
+</element>
+<element name="LOGO5" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="SPECIAL_INSTRUCTIONS-ORDERING" x="30.48" y="50.8" smashed="yes"/>
 </elements>
 <signals>
 <signal name="3.3V">
 <contactref element="J2" pad="2"/>
-<contactref element="J3" pad="2"/>
 <contactref element="J4" pad="2"/>
 <contactref element="JP7" pad="2"/>
 <contactref element="R7" pad="2"/>
@@ -4763,8 +4816,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="21.603" y1="9.368" x2="20.544" y2="9.368" width="0.3048" layer="1"/>
 <wire x1="20.544" y1="9.368" x2="20.066" y2="8.89" width="0.3048" layer="1"/>
 <wire x1="20.066" y1="8.89" x2="19.05" y2="8.89" width="0.3048" layer="1"/>
-<wire x1="8.89" y1="1.27" x2="8.89" y2="3.302" width="0.3048" layer="1"/>
-<wire x1="8.89" y1="3.302" x2="8.89" y2="5.08" width="0.3048" layer="1"/>
 <wire x1="7.62" y1="6.35" x2="8.89" y2="5.08" width="0.3048" layer="1"/>
 <wire x1="7.62" y1="6.35" x2="6.096" y2="6.35" width="0.3048" layer="1"/>
 <wire x1="6.096" y1="6.35" x2="5.334" y2="7.112" width="0.3048" layer="1"/>
@@ -4778,8 +4829,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="12.2" y1="5.088" x2="12.192" y2="5.08" width="0.127" layer="1"/>
 <wire x1="10.66" y1="6.35" x2="10.66" y2="5.088" width="0.3048" layer="1"/>
 <wire x1="10.66" y1="5.088" x2="10.668" y2="5.08" width="0.127" layer="1"/>
-<wire x1="6.35" y1="3.2893" x2="8.8773" y2="3.2893" width="0.127" layer="1"/>
-<wire x1="8.8773" y1="3.2893" x2="8.89" y2="3.302" width="0.127" layer="1"/>
 <wire x1="12.417790625" y1="7.140209375" x2="12.544790625" y2="7.140209375" width="0.3048" layer="1"/>
 <wire x1="12.417790625" y1="7.140209375" x2="12.2" y2="6.92241875" width="0.3048" layer="1"/>
 <via x="12.544790625" y="7.140209375" extent="1-16" drill="0.3048"/>
@@ -4811,6 +4860,11 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="15.791290625" y1="8.846709375" x2="15.748" y2="8.89" width="0.127" layer="16"/>
 <wire x1="15.791290625" y1="7.790290625" x2="15.791290625" y2="8.846709375" width="0.3048" layer="16"/>
 <wire x1="12.2" y1="6.35" x2="12.2" y2="6.92241875" width="0.3048" layer="1"/>
+<contactref element="J1" pad="2"/>
+<wire x1="8.89" y1="1.27" x2="8.89" y2="3.302" width="0.3048" layer="1"/>
+<wire x1="8.89" y1="3.302" x2="8.89" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="6.35" y1="3.2893" x2="8.8773" y2="3.2893" width="0.3048" layer="1"/>
+<wire x1="8.8773" y1="3.2893" x2="8.89" y2="3.302" width="0.3048" layer="1"/>
 </signal>
 <signal name="GND">
 <polygon width="0.127" layer="16" isolate="0.127">
@@ -4837,7 +4891,6 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <contactref element="U1" pad="C6"/>
 <contactref element="R6" pad="2"/>
 <contactref element="J2" pad="1"/>
-<contactref element="J3" pad="1"/>
 <contactref element="J4" pad="1"/>
 <polygon width="0.127" layer="16" isolate="0.1778" thermals="no">
 <vertex x="14.351" y="10.033"/>
@@ -4864,35 +4917,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <via x="11.303" y="6.985" extent="1-16" drill="0.3048"/>
 <via x="20.828" y="5.969" extent="1-16" drill="0.3048"/>
 <via x="9.779" y="10.668" extent="1-16" drill="0.3048"/>
-<wire x1="21.336" y1="11.176" x2="21.603" y2="10.368" width="0" layer="19" extent="1-1"/>
-<wire x1="20.828" y1="5.969" x2="21.603" y2="10.368" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="10.16" x2="21.336" y2="11.176" width="0" layer="19" extent="1-1"/>
-<wire x1="14.95" y1="9.94" x2="16.51" y2="10.16" width="0" layer="19" extent="16-16"/>
-<wire x1="14.2" y1="9.94" x2="14.95" y2="9.94" width="0" layer="19" extent="16-16"/>
-<wire x1="14.224" y1="8.89" x2="14.2" y2="9.94" width="0" layer="19" extent="16-16"/>
-<wire x1="13.462" y1="8.89" x2="14.224" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="8.89" x2="13.462" y2="8.89" width="0" layer="19" extent="16-16"/>
-<wire x1="11.938" y1="8.89" x2="12.7" y2="8.89" width="0" layer="19" extent="16-16"/>
-<wire x1="11.176" y1="8.89" x2="11.938" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="14.2" y1="7.84" x2="14.224" y2="8.89" width="0" layer="19" extent="16-16"/>
-<wire x1="14.95" y1="7.84" x2="14.2" y2="7.84" width="0" layer="19" extent="16-16"/>
-<wire x1="14.097" y1="6.985" x2="14.2" y2="7.84" width="0" layer="19" extent="16-16"/>
-<wire x1="11.2" y1="7.84" x2="11.176" y2="8.89" width="0" layer="19" extent="16-16"/>
-<wire x1="11.303" y1="6.985" x2="11.2" y2="7.84" width="0" layer="19" extent="16-16"/>
-<wire x1="13.2" y1="6.35" x2="14.097" y2="6.985" width="0" layer="19" extent="1-1"/>
-<wire x1="10.45" y1="9.94" x2="11.176" y2="8.89" width="0" layer="19" extent="16-16"/>
-<wire x1="9.779" y1="10.668" x2="10.45" y2="9.94" width="0" layer="19" extent="16-16"/>
-<wire x1="9.66" y1="6.35" x2="11.303" y2="6.985" width="0" layer="19" extent="1-1"/>
-<wire x1="8.763" y1="6.223" x2="9.66" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="8.636" y1="7.12" x2="8.763" y2="6.223" width="0" layer="19" extent="1-1"/>
-<wire x1="7.366" y1="8.013" x2="8.636" y2="7.12" width="0" layer="19" extent="1-1"/>
-<wire x1="4.445" y1="6.477" x2="7.366" y2="8.013" width="0" layer="19" extent="1-1"/>
-<wire x1="3.797" y1="7.412" x2="4.445" y2="6.477" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="1.27" x2="8.763" y2="6.223" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="J2" pad="4"/>
-<contactref element="J3" pad="4"/>
 <contactref element="J4" pad="4"/>
 <contactref element="R5" pad="1"/>
 <contactref element="U1" pad="C4"/>
@@ -4907,9 +4935,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="12.7" y1="11.06059375" x2="12.7" y2="11.9205" width="0.127" layer="1"/>
 <wire x1="12.992" y1="10.76859375" x2="12.7" y2="11.06059375" width="0.127" layer="1"/>
 <wire x1="8.5919625" y1="11.9205" x2="12.7" y2="11.9205" width="0.127" layer="1"/>
-<wire x1="21.603" y1="7.368" x2="20.826" y2="7.368" width="0.127" layer="1"/>
-<wire x1="20.826" y1="7.368" x2="20.574" y2="7.62" width="0.127" layer="1"/>
-<wire x1="20.574" y1="7.62" x2="20.574" y2="8.68340625" width="0.127" layer="1"/>
+<wire x1="21.603" y1="7.368" x2="20.699" y2="7.368" width="0.127" layer="1"/>
+<wire x1="20.699" y1="7.368" x2="20.574" y2="7.493" width="0.127" layer="1"/>
+<wire x1="20.574" y1="7.493" x2="20.574" y2="8.68340625" width="0.127" layer="1"/>
 <wire x1="20.574" y1="8.68340625" x2="20.76809375" y2="8.8775" width="0.127" layer="1"/>
 <wire x1="20.76809375" y1="8.8775" x2="22.45690625" y2="8.8775" width="0.127" layer="1"/>
 <wire x1="22.45690625" y1="8.8775" x2="22.606" y2="9.02659375" width="0.127" layer="1"/>
@@ -4919,20 +4947,20 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="14.732" y1="11.9205" x2="12.7" y2="11.9205" width="0.127" layer="1"/>
 <wire x1="14.74" y1="11.43" x2="14.732" y2="11.438" width="0.127" layer="1"/>
 <wire x1="14.732" y1="11.438" x2="14.732" y2="11.9205" width="0.127" layer="1"/>
-<wire x1="13.97" y1="1.27" x2="13.97" y2="1.778" width="0.127" layer="16"/>
 <wire x1="13.97" y1="1.778" x2="12.954" y2="2.794" width="0.127" layer="16"/>
 <wire x1="3.0099" y1="9.33864375" x2="2.54" y2="9.80854375" width="0.127" layer="16"/>
 <wire x1="2.54" y1="9.80854375" x2="2.54" y2="10.16" width="0.127" layer="16"/>
-<wire x1="3.0099" y1="5.6261" x2="3.0099" y2="9.33864375" width="0.127" layer="16"/>
-<wire x1="12.954" y1="2.794" x2="5.842" y2="2.794" width="0.127" layer="16"/>
-<wire x1="5.842" y1="2.794" x2="3.0099" y2="5.6261" width="0.127" layer="16"/>
+<wire x1="3.0099" y1="7.0231" x2="3.0099" y2="9.33864375" width="0.127" layer="16"/>
+<wire x1="12.954" y1="2.794" x2="7.239" y2="2.794" width="0.127" layer="16"/>
+<wire x1="7.239" y1="2.794" x2="3.0099" y2="7.0231" width="0.127" layer="16"/>
 <wire x1="3.797" y1="10.412" x2="2.792" y2="10.412" width="0.127" layer="1"/>
 <wire x1="2.792" y1="10.412" x2="2.54" y2="10.16" width="0.127" layer="1"/>
 <via x="2.54" y="10.16" extent="1-16" drill="0.3048"/>
+<contactref element="J1" pad="4"/>
+<wire x1="13.97" y1="1.27" x2="13.97" y2="1.778" width="0.127" layer="16"/>
 </signal>
 <signal name="SDA">
 <contactref element="J2" pad="3"/>
-<contactref element="J3" pad="3"/>
 <contactref element="J4" pad="3"/>
 <contactref element="R4" pad="1"/>
 <contactref element="U1" pad="C3"/>
@@ -4944,10 +4972,9 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="22.987" y1="10.795" x2="22.987" y2="8.509" width="0.127" layer="1"/>
 <wire x1="22.846" y1="8.368" x2="21.603" y2="8.368" width="0.127" layer="1"/>
 <wire x1="22.987" y1="8.509" x2="22.846" y2="8.368" width="0.127" layer="1"/>
-<wire x1="11.43" y1="1.27" x2="10.16" y2="2.54" width="0.127" layer="16"/>
-<wire x1="10.16" y1="2.54" x2="5.715" y2="2.54" width="0.127" layer="16"/>
-<wire x1="5.715" y1="2.54" x2="2.54" y2="5.715" width="0.127" layer="16"/>
-<wire x1="2.54" y1="5.715" x2="2.54" y2="9.144" width="0.127" layer="16"/>
+<wire x1="7.112" y1="2.54" x2="10.16" y2="2.54" width="0.127" layer="16"/>
+<wire x1="7.112" y1="2.54" x2="2.54" y2="7.112" width="0.127" layer="16"/>
+<wire x1="2.54" y1="7.112" x2="2.54" y2="9.144" width="0.127" layer="16"/>
 <via x="2.54" y="9.144" extent="1-16" drill="0.3048"/>
 <wire x1="3.797" y1="9.412" x2="2.54" y2="9.412" width="0.127" layer="1"/>
 <wire x1="2.54" y1="9.412" x2="2.272" y2="9.412" width="0.127" layer="1"/>
@@ -4964,6 +4991,8 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <wire x1="11.557" y1="11.303" x2="8.1105" y2="11.303" width="0.127" layer="16"/>
 <via x="7.62" y="11.7935" extent="1-16" drill="0.3048"/>
 <wire x1="12.192" y1="10.668" x2="11.95" y2="10.668" width="0.127" layer="16"/>
+<contactref element="J1" pad="3"/>
+<wire x1="10.16" y1="2.54" x2="11.43" y2="1.27" width="0.127" layer="16"/>
 </signal>
 <signal name="INT">
 <contactref element="J5" pad="1"/>
@@ -5105,6 +5134,10 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
