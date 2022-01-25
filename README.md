@@ -1,13 +1,15 @@
 SparkFun Qwiic ToF Imager with VL53L5CX
 ========================================
 
-![SparkFun Qwiic ToF Imager with VL53L5CX](https://cdn.sparkfun.com/assets/parts/1/8/1/6/9/18642-SparkFun_Qwiic_ToF_Imager_-_VL53L5CX-01.jpg)
+![SparkFun Qwiic Mini ToF Imager - VL53L5CX](https://cdn.sparkfun.com/assets/parts/1/8/6/1/2/19013-SparkFun_Qwiic_Mini_ToF_Imager_-_VL53L5CX-01.jpg)
 
-[*SparkFun Qwiic ToF Imager with VL53L5CX(SEN-18642)*](https://www.sparkfun.com/products/18642)
+[*SparkFun Qwiic Mini ToF Imager - VL53L5CX (SEN-19013)*](https://www.sparkfun.com/products/19013)
 
-The SparkFun Qwiic ToF Imager is built around VL53L5CX from ST Electronics; a state of the art, Time-of-Flight (ToF), multizone ranging sensor enhancing the ST FlightSense product family. This chip integrates a SPAD array, physical infrared filters, and diffractive optical elements (DOE) to achieve the best ranging performance in various ambient lighting conditions with a range of cover glass materials. Utilizing our handy Qwiic system, no soldering is required to connect it to the rest of your system. However, we still have broken out 0.1"-spaced pins in case you prefer to use a breadboard.
+The SparkFun Qwiic Mini ToF Imager is a state of the art, 64 pixel Time-of-Flight (ToF) 4 meter ranging sensor built around the VL53L5CX from ST. This _Mini_ version has a footprint that is half the size (0.5 in x 1 in) of our standard [Qwiic VL53L5CX](https://www.sparkfun.com/products/18642). Additionally, we moved the Qwiic connectors to the back of the board in a vertical orientation. These design changes favor mounting applications where the VL53L5CX sensor faces outward from an enclosure or chassis, and keeps your Qwiic cables cleanly tucked away.  
 
-Multizone distance measurements are possible up to 8x8 zones with a wide 63° diagonal FoV which can be reduced by software. Thanks to ST Histogram patented algorithms, the VL53L5CX is able to detect different objects within the FoV. The Histogram also provides immunity to cover glass crosstalk beyond 60 cm.
+This chip integrates a SPAD array, physical infrared filters, and diffractive optical elements (DOE) to achieve the best ranging performance in various ambient lighting conditions with a range of cover glass materials. Utilizing our handy Qwiic system, no soldering is required to connect it to the rest of your system. However, we still have broken out **some** 0.1"-spaced pins in case you prefer to use a breadboard.
+
+Multizone distance measurements up to 4000mm are possible across all 64 zones with a wide 63° diagonal field-of-view which can be read up to 15Hz. Thanks to ST Histogram patented algorithms, the VL53L5CX is able to detect different objects within the FoV. The Histogram also provides immunity to cover glass crosstalk beyond 60 cm.
 
 Ideal for 3D room mapping, obstacle detection for robotics, gesture recognition, IoT, laser-assisted autofocus, and AR/VR enhancement, the Qwiic connector on this sensor makes integration easy. 
 
